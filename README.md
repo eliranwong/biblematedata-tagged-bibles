@@ -23,7 +23,6 @@ Live Demo: [web.biblemate.ai](https://web.biblemate.ai)
 | `KJV.bible` | King James Version | English |
 | `LEB.bible` | Lexham English Bible | English |
 | `NET.bible` | New English Translation | English |
-| `RCUV.bible` | Revised Chinese Union Version (和合本修訂版, Traditional Chinese) | Chinese |
 | `ULT.bible` | unfoldingWord Literal Text | English |
 | `UST.bible` | unfoldingWord Simplified Text | English |
 | `WEB.bible` | World English Bible | English |
