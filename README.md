@@ -20,6 +20,7 @@ Live Demo: [web.biblemate.ai](https://web.biblemate.ai)
 | `ASV.bible` | American Standard Version | English |
 | `BSB.bible` | Berean Study Bible | English |
 | `CUV.bible` | Chinese Union Version (Traditional Chinese) | Chinese |
+| `CUVs.bible` | Chinese Union Version (Simplified Chinese) | Chinese |
 | `KJV.bible` | King James Version | English |
 | `LEB.bible` | Lexham English Bible | English |
 | `NET.bible` | New English Translation | English |
