@@ -2,7 +2,7 @@
 
 Word-level tagged Bible SQLite databases (`*.bible`) for the **BibleMate AI** ecosystem. Each Bible translation is mapped at the word/phrase level to the original Hebrew/Aramaic and Greek words in [OpenHebrewBible](https://github.com/eliranwong/OpenHebrewBible) and [OpenGNT](https://github.com/eliranwong/OpenGNT).
 
-The same public alignments are also published as a spreadsheet in [`tsv/morphology.tsv`](tsv/morphology.tsv): one row per original-language word, with each translation in its own column. Column-by-column notes are in [tsv/README.md](tsv/README.md).
+The same public alignments are also published as a spreadsheet in [`tsv/tagged_bibles.tsv`](tsv/tagged_bibles.tsv): one row per original-language word, with each translation in its own column. Column-by-column notes are in [tsv/README.md](tsv/README.md).
 
 Live Demo: [web.biblemate.ai](https://web.biblemate.ai)
 
@@ -14,7 +14,7 @@ Live Demo: [web.biblemate.ai](https://web.biblemate.ai)
 
 - **`tagged_chapters_and_verses/`** — `.bible` SQLite databases with word-ID taggings in **both** the `Bible` (chapter-level) and `Verses` (verse-level) tables.
 - **`tagged_chapters_plain_verses/`** — `.bible` SQLite databases with word-ID taggings in the `Bible` (chapter-level) table and **plain, untagged text** in the `Verses` (verse-level) table.
-- **`tsv/`** — [`morphology.tsv`](tsv/morphology.tsv), the word-level alignment table for the public translations. See [tsv/README.md](tsv/README.md).
+- **`tsv/`** — [`tagged_bibles.tsv`](tsv/tagged_bibles.tsv), the word-level alignment table for the public translations. See [tsv/README.md](tsv/README.md).
 
 ### Included Translations
 
@@ -41,7 +41,7 @@ Detailed pipeline notes for word-ID alignment and morphology mapping:
 - [leb_morphology_mapping_process.md](leb_morphology_mapping_process.md)
 - [net_morphology_mapping_process.md](net_morphology_mapping_process.md)
 
-### `tsv/morphology.tsv`
+### `tsv/tagged_bibles.tsv`
 
 Flat export of the public word alignment: **564,594** rows (**426,581** Old Testament + **138,013** New Testament), Protestant books **1–66**, UTF-8, tab-separated. Full column notes, coverage counts, and load examples are in [tsv/README.md](tsv/README.md).
 
@@ -58,7 +58,7 @@ Ways to use it:
 - Compare how several versions render one Hebrew, Aramaic, or Greek word, including literal English (`ULT`) beside simplified English (`UST`), and Traditional Chinese (`CUV`) beside Simplified Chinese (`CSVs`).
 - Filter to one `Book`, `Chapter`, and `Verse` and read the rows in order as an interlinear.
 - Follow a tag in a `.bible` file (`wh2`, `w2`, …) back to the matching `WordID` in that testament.
-- Join lexicon headwords and Extended Strong’s numbers from [biblematedata-mapping-HALOT-CHALOT-BDBE-BDAG-LSJ](https://github.com/eliranwong/biblematedata-mapping-HALOT-CHALOT-BDBE-BDAG-LSJ). That repository’s `data/morphology.tsv` has these same 564,594 word rows, with **BDBE**, **CHALOT**, and **HALOT** for Hebrew/Aramaic and **BDAG** and **LSJ** for Greek, plus `eStrong` and `eStrongContextSpecific`. Join on **`Book` + `WordID`**.
+- Join lexicon headwords and Extended Strong’s numbers from [biblematedata-mapping-HALOT-CHALOT-BDBE-BDAG-LSJ](https://github.com/eliranwong/biblematedata-mapping-HALOT-CHALOT-BDBE-BDAG-LSJ). That repository’s `data/tagged_bibles.tsv` has these same 564,594 word rows, with **BDBE**, **CHALOT**, and **HALOT** for Hebrew/Aramaic and **BDAG** and **LSJ** for Greek, plus `eStrong` and `eStrongContextSpecific`. Join on **`Book` + `WordID`**.
 
 ---
 
@@ -204,7 +204,7 @@ Matching [OHGB.bible](file:///home/eliran/dev/OpenHebrewBible/data/OHGB.bible) a
 ### Other BibleMateData Projects
 - [biblematedata](https://github.com/eliranwong/biblematedata)
 - [biblematedata-names](https://github.com/eliranwong/biblematedata-names)
-- [biblematedata-mapping-HALOT-CHALOT-BDBE-BDAG-LSJ](https://github.com/eliranwong/biblematedata-mapping-HALOT-CHALOT-BDBE-BDAG-LSJ) — lexicon ids (BDBE, CHALOT, HALOT, BDAG, LSJ) and Extended Strong’s numbers for the same words as [`tsv/morphology.tsv`](tsv/morphology.tsv); join on `Book` + `WordID`
+- [biblematedata-mapping-HALOT-CHALOT-BDBE-BDAG-LSJ](https://github.com/eliranwong/biblematedata-mapping-HALOT-CHALOT-BDBE-BDAG-LSJ) — lexicon ids (BDBE, CHALOT, HALOT, BDAG, LSJ) and Extended Strong’s numbers for the same words as [`tsv/tagged_bibles.tsv`](tsv/tagged_bibles.tsv); join on `Book` + `WordID`
 - [More repositories by eliranwong](https://github.com/eliranwong?tab=repositories)
 
 ### BibleMate AI Ecosystem

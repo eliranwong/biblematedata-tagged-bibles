@@ -1,4 +1,4 @@
-# `morphology.tsv`
+# `tagged_bibles.tsv`
 
 Word-level alignment of the public Bible translations in this repository to each Hebrew, Aramaic, and Greek word.
 
@@ -69,7 +69,7 @@ The file is the flat, spreadsheet-friendly form of the word alignment behind the
 ```python
 import csv
 
-with open("morphology.tsv", encoding="utf-8", newline="") as f:
+with open("tagged_bibles.tsv", encoding="utf-8", newline="") as f:
     rows = list(csv.DictReader(f, delimiter="\t"))
 
 verse = [
@@ -94,7 +94,7 @@ CREATE TABLE morphology (
   CUV TEXT, CSVs TEXT
 );
 .mode tabs
-.import --skip 1 morphology.tsv morphology
+.import --skip 1 tagged_bibles.tsv morphology
 ```
 
 ## Lexical mappings
@@ -106,7 +106,7 @@ CREATE TABLE morphology (
 - `eStrong` and context-specific `eStrong` (`eStrongContextSpecific`)
 - Lemma (`Lexeme`), English `Gloss`, and BibleMate `LexicalEntry` ids
 
-Use `data/morphology.tsv` in that repository. It has the same rows as this file. Join on **`Book` + `WordID`**.
+Use `data/tagged_bibles.tsv` in that repository. It has the same rows as this file. Join on **`Book` + `WordID`**.
 
 Per-lexicon headword tables (`BDBE.tsv`, `CHALOT.tsv`, `HALOT.tsv`, `BDAG.tsv`, `LSJ.tsv`) and the `Morphology.lexicon` SQLite database are in that repository as well.
 
