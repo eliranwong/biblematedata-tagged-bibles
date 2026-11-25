@@ -115,4 +115,4 @@ Per-lexicon headword tables (`BDBE.tsv`, `CHALOT.tsv`, `HALOT.tsv`, `BDAG.tsv`, 
 - [Tagged Bible layout and word-id convention](../README.md)
 - [OpenHebrewBible](https://github.com/eliranwong/OpenHebrewBible)
 - [OpenGNT](https://github.com/eliranwong/OpenGNT)
-- [BibleMate](https://github.com/eliranwong/biblemate) · [web.biblemate.ai](https://web.biblemate.ai)
+- [BibleMate](https://github.com/eliranwong/biblemate) · [app.biblemate.ai](https://app.biblemate.ai)

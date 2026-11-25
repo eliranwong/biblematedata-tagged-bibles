@@ -4,7 +4,7 @@ Word-level tagged Bible SQLite databases (`*.bible`) for the **BibleMate AI** ec
 
 The same public alignments are also published as a spreadsheet in [`tsv/tagged_bibles.tsv`](tsv/tagged_bibles.tsv): one row per original-language word, with each translation in its own column. Column-by-column notes are in [tsv/README.md](tsv/README.md).
 
-Live Demo: [web.biblemate.ai](https://web.biblemate.ai)
+Live Demo: [app.biblemate.ai](https://app.biblemate.ai)
 
 ---
 
